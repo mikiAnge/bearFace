@@ -1,0 +1,140 @@
+@font-face{
+  font-family: "Shadows Into Light";
+  src: url("./font/ShadowsIntoLight-Regular.ttf")
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ecf0f1;
+  font-family: 'Shadows Into Light', cursive;
+  padding-top: 330px;
+  transition: padding-top 0.5s ease;
+}
+
+header {
+  width: 100%;
+  height: 300px;
+  background-image: url("./img/pedobearbanner.jpg");
+  background-size: cover;
+  background-position: right;
+  /*background: cadetblue;*/
+  text-align: center;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+header h1 {
+  font-size: 42px;
+  color: white;
+  line-height: 230px;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  /*reescala texto*/
+  font-size: calc(1rem + 3vw);
+}
+
+header h1 i {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+header nav {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background: rgba( 232, 63, 0, 0.8);
+}
+
+header nav a {
+  color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+header nav a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 34px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 2;
+  color: #2c3e50;
+}
+
+p {
+  margin-bottom: 2rem;
+  line-height: 2;
+  color: #7f8c8d;
+}
+
+.wrapper{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+body.sticky-header {
+  padding-top: 100px;
+}
+
+body.sticky-header header {
+  height: 60px;
+  background: #e88300;
+}
+
+body.sticky-header header h1 {
+  transform: scale(0, 0);
+}
+
+/*--Stilo para input y otras cosillas mas--*/
+input {
+  font-family: 'Shadows Into Light';
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div {
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*--Borrar esto luego que para pruebas--*/
+  border: 3px solid violet;
+}
